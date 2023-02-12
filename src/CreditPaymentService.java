@@ -1,7 +1,7 @@
 public class CreditPaymentService {
-    public double calculate(double i, double a1, double b1) {
+    public double calculate(double persentRate, double x, double monthsPay) {
         double result;
-        result = (i * Math.pow(a1, b1) / (Math.pow(a1, b1) - 1));
+        result = (persentRate * Math.pow(x, monthsPay) / (Math.pow(x, monthsPay) - 1));
         return result;
     }
 }
